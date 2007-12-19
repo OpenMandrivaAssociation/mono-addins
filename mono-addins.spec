@@ -5,7 +5,7 @@ License:	LGPL
 BuildArch:      noarch
 URL:		http://www.go-mono.com
 Source0:	http://go-mono.com/sources/mono-addins/%{name}-%{version}.tar.bz2
-BuildRequires:	mono-devel gtk-sharp2-devel
+BuildRequires:	mono-devel gtk-sharp2
 Summary:	Mono Addins
 Group:		Development/Other
 
