@@ -8,6 +8,7 @@ Source0:	http://go-mono.com/sources/mono-addins/%{name}-%{version}.tar.bz2
 BuildRequires:	mono-devel gtk-sharp2
 Summary:	Mono Addins
 Group:		Development/Other
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Mono Addin Support
