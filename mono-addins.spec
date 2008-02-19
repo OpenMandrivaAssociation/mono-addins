@@ -1,5 +1,5 @@
 Name:     	mono-addins
-Version:	0.3
+Version:	0.3.1
 Release:	%mkrel 1
 License:	LGPL
 BuildArch:      noarch
