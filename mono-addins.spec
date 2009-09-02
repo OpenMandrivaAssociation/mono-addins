@@ -1,6 +1,6 @@
 Name:     	mono-addins
 Version:	0.4
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	LGPL
 BuildArch:      noarch
 URL:		http://www.go-mono.com
