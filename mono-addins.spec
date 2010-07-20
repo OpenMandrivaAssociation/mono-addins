@@ -1,10 +1,10 @@
 Name:     	mono-addins
-Version:	0.4
-Release:	%mkrel 3
-License:	LGPL
+Version:	0.5
+Release:	%mkrel 1
+License:	MIT
 BuildArch:      noarch
 URL:		http://www.go-mono.com
-Source0:	http://go-mono.com/sources/mono-addins/%{name}-%{version}.zip
+Source0:	http://ftp.novell.com/pub/mono/sources/%name/%name-%version.tar.bz2
 BuildRequires:	mono-devel gtk-sharp2
 Summary:	Mono Addins
 Group:		Development/Other
@@ -53,8 +53,18 @@ rm -rf "$RPM_BUILD_ROOT"
 %_prefix/lib/mono/mono-addins/Mono.Addins.Setup.dll
 
 %_prefix/lib/mono/gac/Mono.Addins.Gui
+%_prefix/lib/mono/gac/Mono.Addins.MSBuild
 %_prefix/lib/mono/gac/policy.0.2.Mono.Addins.Gui
+%_prefix/lib/mono/gac/policy.0.2.Mono.Addins.MSBuild
 %_prefix/lib/mono/gac/policy.0.3.Mono.Addins.Gui
+%_prefix/lib/mono/gac/policy.0.3.Mono.Addins.MSBuild
+%_prefix/lib/mono/gac/policy.0.4.Mono.Addins
+%_prefix/lib/mono/gac/policy.0.4.Mono.Addins.CecilReflector
+%_prefix/lib/mono/gac/policy.0.4.Mono.Addins.Gui
+%_prefix/lib/mono/gac/policy.0.4.Mono.Addins.MSBuild
+%_prefix/lib/mono/gac/policy.0.4.Mono.Addins.Setup
 %_prefix/lib/mono/mono-addins/Mono.Addins.Gui.dll
+%_prefix/lib/mono/mono-addins/Mono.Addins.MSBuild.dll
+%_prefix/lib/mono/xbuild/Mono.Addins.targets
 %_datadir/pkgconfig/*.pc
 
