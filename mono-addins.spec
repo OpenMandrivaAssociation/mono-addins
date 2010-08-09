@@ -1,6 +1,6 @@
 Name:     	mono-addins
 Version:	0.5
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	MIT
 BuildArch:      noarch
 URL:		http://www.go-mono.com
@@ -12,6 +12,14 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Mono Addin Support
+
+%package devel
+Summary: Development files for %name
+Group: Development/Other
+Requires: %name = %version-%release
+
+%description devel
+Mono Addin Support - development files and tools
 	  
 %prep
 %setup -q
@@ -53,18 +61,22 @@ rm -rf "$RPM_BUILD_ROOT"
 %_prefix/lib/mono/mono-addins/Mono.Addins.Setup.dll
 
 %_prefix/lib/mono/gac/Mono.Addins.Gui
-%_prefix/lib/mono/gac/Mono.Addins.MSBuild
 %_prefix/lib/mono/gac/policy.0.2.Mono.Addins.Gui
-%_prefix/lib/mono/gac/policy.0.2.Mono.Addins.MSBuild
 %_prefix/lib/mono/gac/policy.0.3.Mono.Addins.Gui
-%_prefix/lib/mono/gac/policy.0.3.Mono.Addins.MSBuild
 %_prefix/lib/mono/gac/policy.0.4.Mono.Addins
 %_prefix/lib/mono/gac/policy.0.4.Mono.Addins.CecilReflector
 %_prefix/lib/mono/gac/policy.0.4.Mono.Addins.Gui
-%_prefix/lib/mono/gac/policy.0.4.Mono.Addins.MSBuild
 %_prefix/lib/mono/gac/policy.0.4.Mono.Addins.Setup
 %_prefix/lib/mono/mono-addins/Mono.Addins.Gui.dll
+
+%files devel
+%defattr(-, root, root)
+%_datadir/pkgconfig/*.pc
+#gw these depend on stuff in libmono-devel:
+%_prefix/lib/mono/gac/Mono.Addins.MSBuild
+%_prefix/lib/mono/gac/policy.0.2.Mono.Addins.MSBuild
+%_prefix/lib/mono/gac/policy.0.3.Mono.Addins.MSBuild
+%_prefix/lib/mono/gac/policy.0.4.Mono.Addins.MSBuild
 %_prefix/lib/mono/mono-addins/Mono.Addins.MSBuild.dll
 %_prefix/lib/mono/xbuild/Mono.Addins.targets
-%_datadir/pkgconfig/*.pc
 
