@@ -1,6 +1,6 @@
 Name:     	mono-addins
-Version:	0.5
-Release:	%mkrel 2
+Version:	0.6
+Release:	%mkrel 1
 License:	MIT
 BuildArch:      noarch
 URL:		http://www.go-mono.com
@@ -48,16 +48,19 @@ rm -rf "$RPM_BUILD_ROOT"
 %_prefix/lib/mono/gac/Mono.Addins
 %_prefix/lib/mono/gac/policy.0.2.Mono.Addins
 %_prefix/lib/mono/gac/policy.0.3.Mono.Addins
+%_prefix/lib/mono/gac/policy.0.5.Mono.Addins
 %_prefix/lib/mono/mono-addins/Mono.Addins.dll
 
 %_prefix/lib/mono/gac/Mono.Addins.CecilReflector/
 %_prefix/lib/mono/gac/policy.0.2.Mono.Addins.CecilReflector/
 %_prefix/lib/mono/gac/policy.0.3.Mono.Addins.CecilReflector/
+%_prefix/lib/mono/gac/policy.0.5.Mono.Addins.CecilReflector/
 %_prefix/lib/mono/mono-addins/Mono.Addins.CecilReflector.dll
 
 %_prefix/lib/mono/gac/Mono.Addins.Setup
 %_prefix/lib/mono/gac/policy.0.2.Mono.Addins.Setup
 %_prefix/lib/mono/gac/policy.0.3.Mono.Addins.Setup
+%_prefix/lib/mono/gac/policy.0.5.Mono.Addins.Setup
 %_prefix/lib/mono/mono-addins/Mono.Addins.Setup.dll
 
 %_prefix/lib/mono/gac/Mono.Addins.Gui
@@ -66,6 +69,7 @@ rm -rf "$RPM_BUILD_ROOT"
 %_prefix/lib/mono/gac/policy.0.4.Mono.Addins
 %_prefix/lib/mono/gac/policy.0.4.Mono.Addins.CecilReflector
 %_prefix/lib/mono/gac/policy.0.4.Mono.Addins.Gui
+%_prefix/lib/mono/gac/policy.0.5.Mono.Addins.Gui
 %_prefix/lib/mono/gac/policy.0.4.Mono.Addins.Setup
 %_prefix/lib/mono/mono-addins/Mono.Addins.Gui.dll
 
@@ -77,6 +81,7 @@ rm -rf "$RPM_BUILD_ROOT"
 %_prefix/lib/mono/gac/policy.0.2.Mono.Addins.MSBuild
 %_prefix/lib/mono/gac/policy.0.3.Mono.Addins.MSBuild
 %_prefix/lib/mono/gac/policy.0.4.Mono.Addins.MSBuild
+%_prefix/lib/mono/gac/policy.0.5.Mono.Addins.MSBuild
 %_prefix/lib/mono/mono-addins/Mono.Addins.MSBuild.dll
 %_prefix/lib/mono/xbuild/Mono.Addins.targets
 
