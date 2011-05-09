@@ -1,6 +1,6 @@
 Name:     	mono-addins
 Version:	0.6
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	MIT
 BuildArch:      noarch
 URL:		http://www.go-mono.com
@@ -12,6 +12,34 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Mono Addin Support
+
+%package 0.5
+Group:		Development/Other
+Summary: Mono Addins compatibility 
+
+%description 0.5
+Mono Addin Support - compatibility package
+
+%package 0.4
+Group:		Development/Other
+Summary: Mono Addins compatibility 
+
+%description 0.4
+Mono Addin Support - compatibility package
+
+%package 0.3
+Group:		Development/Other
+Summary: Mono Addins compatibility 
+
+%description 0.3
+Mono Addin Support - compatibility package
+
+%package 0.2
+Group:		Development/Other
+Summary: Mono Addins compatibility 
+
+%description 0.2
+Mono Addin Support - compatibility package
 
 %package devel
 Summary: Development files for %name
@@ -46,32 +74,44 @@ rm -rf "$RPM_BUILD_ROOT"
 %_prefix/lib/mono/mono-addins/mautil.exe
 
 %_prefix/lib/mono/gac/Mono.Addins
-%_prefix/lib/mono/gac/policy.0.2.Mono.Addins
-%_prefix/lib/mono/gac/policy.0.3.Mono.Addins
-%_prefix/lib/mono/gac/policy.0.5.Mono.Addins
 %_prefix/lib/mono/mono-addins/Mono.Addins.dll
 
 %_prefix/lib/mono/gac/Mono.Addins.CecilReflector/
-%_prefix/lib/mono/gac/policy.0.2.Mono.Addins.CecilReflector/
-%_prefix/lib/mono/gac/policy.0.3.Mono.Addins.CecilReflector/
-%_prefix/lib/mono/gac/policy.0.5.Mono.Addins.CecilReflector/
 %_prefix/lib/mono/mono-addins/Mono.Addins.CecilReflector.dll
 
 %_prefix/lib/mono/gac/Mono.Addins.Setup
-%_prefix/lib/mono/gac/policy.0.2.Mono.Addins.Setup
-%_prefix/lib/mono/gac/policy.0.3.Mono.Addins.Setup
-%_prefix/lib/mono/gac/policy.0.5.Mono.Addins.Setup
 %_prefix/lib/mono/mono-addins/Mono.Addins.Setup.dll
 
 %_prefix/lib/mono/gac/Mono.Addins.Gui
+%_prefix/lib/mono/mono-addins/Mono.Addins.Gui.dll
+
+%files 0.2
+%defattr(-, root, root)
+%_prefix/lib/mono/gac/policy.0.2.Mono.Addins
+%_prefix/lib/mono/gac/policy.0.2.Mono.Addins.CecilReflector/
+%_prefix/lib/mono/gac/policy.0.2.Mono.Addins.Setup
 %_prefix/lib/mono/gac/policy.0.2.Mono.Addins.Gui
+
+%files 0.3
+%defattr(-, root, root)
+%_prefix/lib/mono/gac/policy.0.3.Mono.Addins
+%_prefix/lib/mono/gac/policy.0.3.Mono.Addins.CecilReflector/
+%_prefix/lib/mono/gac/policy.0.3.Mono.Addins.Setup
 %_prefix/lib/mono/gac/policy.0.3.Mono.Addins.Gui
+
+%files 0.4
+%defattr(-, root, root)
 %_prefix/lib/mono/gac/policy.0.4.Mono.Addins
 %_prefix/lib/mono/gac/policy.0.4.Mono.Addins.CecilReflector
 %_prefix/lib/mono/gac/policy.0.4.Mono.Addins.Gui
-%_prefix/lib/mono/gac/policy.0.5.Mono.Addins.Gui
 %_prefix/lib/mono/gac/policy.0.4.Mono.Addins.Setup
-%_prefix/lib/mono/mono-addins/Mono.Addins.Gui.dll
+
+%files 0.5
+%defattr(-, root, root)
+%_prefix/lib/mono/gac/policy.0.5.Mono.Addins
+%_prefix/lib/mono/gac/policy.0.5.Mono.Addins.CecilReflector/
+%_prefix/lib/mono/gac/policy.0.5.Mono.Addins.Setup
+%_prefix/lib/mono/gac/policy.0.5.Mono.Addins.Gui
 
 %files devel
 %defattr(-, root, root)
