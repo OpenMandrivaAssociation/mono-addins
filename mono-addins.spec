@@ -1,6 +1,6 @@
 Name:     	mono-addins
 Version:	0.6
-Release:	%mkrel 3
+Release:	%mkrel 4
 License:	MIT
 BuildArch:      noarch
 URL:		http://www.go-mono.com
@@ -15,7 +15,9 @@ Mono Addin Support
 
 %package 0.5
 Group:		Development/Other
-Summary: Mono Addins compatibility 
+Summary: Mono Addins compatibility
+Conflicts:	%name < 0.6-3
+Requires:	%name = %version
 
 %description 0.5
 Mono Addin Support - compatibility package
@@ -23,6 +25,8 @@ Mono Addin Support - compatibility package
 %package 0.4
 Group:		Development/Other
 Summary: Mono Addins compatibility 
+Conflicts:	%name < 0.6-3
+Requires:	%name = %version
 
 %description 0.4
 Mono Addin Support - compatibility package
@@ -30,6 +34,8 @@ Mono Addin Support - compatibility package
 %package 0.3
 Group:		Development/Other
 Summary: Mono Addins compatibility 
+Conflicts:	%name < 0.6-3
+Requires:	%name = %version
 
 %description 0.3
 Mono Addin Support - compatibility package
@@ -37,6 +43,8 @@ Mono Addin Support - compatibility package
 %package 0.2
 Group:		Development/Other
 Summary: Mono Addins compatibility 
+Conflicts:	%name < 0.6-3
+Requires:	%name = %version
 
 %description 0.2
 Mono Addin Support - compatibility package
