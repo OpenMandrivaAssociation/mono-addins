@@ -1,10 +1,10 @@
 Name:     	mono-addins
-Version:	0.6.1
+Version:	0.6.2
 Release:	%mkrel 1
 License:	MIT
 BuildArch:      noarch
 URL:		http://www.go-mono.com
-Source0:	http://ftp.novell.com/pub/mono/sources/%name/%name-%version.tar.bz2
+Source0:	http://download.mono-project.com/sources/%name/%name-%version.tar.bz2
 BuildRequires:	mono-devel gtk-sharp2
 Summary:	Mono Addins
 Group:		Development/Other
