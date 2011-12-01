@@ -66,14 +66,14 @@ Mono Addin Support - development files and tools
 make
 
 %install
-rm -rf "$RPM_BUILD_ROOT"
+rm -rf "%{buildroot}"
 %makeinstall_std
 
-mkdir -p $RPM_BUILD_ROOT%_datadir/pkgconfig
-mv $RPM_BUILD_ROOT%_prefix/lib*/pkgconfig/*.pc $RPM_BUILD_ROOT%_datadir/pkgconfig
+mkdir -p %{buildroot}%_datadir/pkgconfig
+mv %{buildroot}%_prefix/lib*/pkgconfig/*.pc %{buildroot}%_datadir/pkgconfig
 
 %clean
-rm -rf "$RPM_BUILD_ROOT"
+rm -rf "%{buildroot}"
 
 %files
 %defattr(-, root, root)
