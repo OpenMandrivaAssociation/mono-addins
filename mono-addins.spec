@@ -1,11 +1,13 @@
 Summary:	Mono Addins
 Name:		mono-addins
-Version:	0.6.2
-Release:	12
+Version:	1.3.3
+Release:	1
 License:	MIT
 Group:		Development/Other
 Url:		http://www.go-mono.com
-Source0:	http://ftp.novell.com/pub/mono/sources/%{name}/%{name}-%{version}.tar.bz2
+Package from here: https://github.com/mono/mono-addins/releases
+Source0:	%{name}-%{name}-%{version}.tar.gz
+#Source0:	http://ftp.novell.com/pub/mono/sources/%{name}/%{name}-%{version}.tar.bz2
 BuildArch:	noarch
 BuildRequires:	pkgconfig(gtk-sharp-2.0)
 BuildRequires:	pkgconfig(mono)
@@ -58,7 +60,7 @@ Requires:	%{name} = %{version}-%{release}
 Mono Addin Support - development files and tools
 	  
 %prep
-%setup -q
+%setup -q -n %{name}-%{name}-%{version}
 
 %build
 ./configure --prefix=%{_prefix}
