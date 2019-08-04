@@ -5,7 +5,7 @@ Release:	1
 License:	MIT
 Group:		Development/Other
 Url:		http://www.go-mono.com
-Package from here: https://github.com/mono/mono-addins/releases
+#Package from here: https://github.com/mono/mono-addins/releases
 Source0:	%{name}-%{name}-%{version}.tar.gz
 #Source0:	http://ftp.novell.com/pub/mono/sources/%{name}/%{name}-%{version}.tar.bz2
 BuildArch:	noarch
