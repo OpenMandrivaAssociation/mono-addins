@@ -63,6 +63,7 @@ Mono Addin Support - development files and tools
 %setup -q -n %{name}-%{name}-%{version}
 
 %build
+autoreconf -vif
 ./configure --prefix=%{_prefix}
 #gw parallel make broken in 0.4
 make
