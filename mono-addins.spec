@@ -15,6 +15,15 @@ BuildRequires:	pkgconfig(mono)
 %description
 Mono Addin Support
 
+%package 0.6
+Group:		Development/Other
+Summary:	Mono Addins compatibility
+Conflicts:	%{name} < 0.6-3
+Requires:	%{name} = %{version}-%{release}
+
+%description 0.6
+Mono Addin Support - compatibility package
+
 %package 0.5
 Group:		Development/Other
 Summary:	Mono Addins compatibility
@@ -118,6 +127,9 @@ mv $RPM_BUILD_ROOT%_prefix/lib*/pkgconfig/*.pc $RPM_BUILD_ROOT%_datadir/pkgconfi
 %{_prefix}/lib/mono/gac/policy.0.5.Mono.Addins.CecilReflector/
 %{_prefix}/lib/mono/gac/policy.0.5.Mono.Addins.Setup
 %{_prefix}/lib/mono/gac/policy.0.5.Mono.Addins.Gui
+
+%files 0.6
+%{_prefix}/lib/mono/gac/policy.0.6.Mono.Addins*
 
 %files devel
 %{_datadir}/pkgconfig/*.pc
