@@ -5,7 +5,7 @@ Release:	1
 License:	MIT
 Group:		Development/Other
 Url:		http://www.go-mono.com
-Source0:	https://github.com/mono/mono-addins/archive/%{name}-%{version}-%{name}-%{version}.tar.gz
+Source0:	https://github.com/mono/mono-addins/archive/%{name}-%{name}-%{version}.tar.gz
 #Source0:	http://ftp.novell.com/pub/mono/sources/%{name}/%{name}-%{version}.tar.bz2
 BuildArch:	noarch
 BuildRequires:	pkgconfig(gtk-sharp-2.0)
