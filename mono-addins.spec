@@ -128,5 +128,5 @@ mv $RPM_BUILD_ROOT%_prefix/lib*/pkgconfig/*.pc $RPM_BUILD_ROOT%_datadir/pkgconfi
 %{_prefix}/lib/mono/gac/policy.0.4.Mono.Addins.MSBuild
 %{_prefix}/lib/mono/gac/policy.0.5.Mono.Addins.MSBuild
 %{_prefix}/lib/mono/mono-addins/Mono.Addins.MSBuild.dll
-%{_prefix}/lib/mono/xbuild/Mono.Addins.targets
+#{_prefix}/lib/mono/xbuild/Mono.Addins.targets
 
