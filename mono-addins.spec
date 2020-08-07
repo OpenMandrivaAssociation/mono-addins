@@ -70,6 +70,9 @@ autoreconf -vif
 %install
 %make_install
 
+mkdir -p $RPM_BUILD_ROOT%_datadir/pkgconfig
+mv $RPM_BUILD_ROOT%_prefix/lib*/pkgconfig/*.pc $RPM_BUILD_ROOT%_datadir/pkgconfig
+
 #mkdir -p %{buildroot}%{_datadir}/pkgconfig
 #mv %{buildroot}%{_prefix}/lib*/pkgconfig/*.pc %{buildroot}%{_datadir}/pkgconfig
 
