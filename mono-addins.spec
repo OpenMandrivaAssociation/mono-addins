@@ -5,8 +5,7 @@ Release:	1
 License:	MIT
 Group:		Development/Other
 Url:		http://www.go-mono.com
-#Package from here: https://github.com/mono/mono-addins/releases
-Source0:	%{name}-%{name}-%{version}.tar.gz
+Source0:	https://github.com/mono/mono-addins/archive/%{name}-%{version}.tar.gz
 #Source0:	http://ftp.novell.com/pub/mono/sources/%{name}/%{name}-%{version}.tar.bz2
 BuildArch:	noarch
 BuildRequires:	pkgconfig(gtk-sharp-2.0)
@@ -66,13 +65,13 @@ Mono Addin Support - development files and tools
 autoreconf -vif
 ./configure --prefix=%{_prefix}
 #gw parallel make broken in 0.4
-make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
-mkdir -p %{buildroot}%{_datadir}/pkgconfig
-mv %{buildroot}%{_prefix}/lib*/pkgconfig/*.pc %{buildroot}%{_datadir}/pkgconfig
+#mkdir -p %{buildroot}%{_datadir}/pkgconfig
+#mv %{buildroot}%{_prefix}/lib*/pkgconfig/*.pc %{buildroot}%{_datadir}/pkgconfig
 
 %files
 %_bindir/mautil
