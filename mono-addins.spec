@@ -7,6 +7,7 @@ Group:		Development/Other
 Url:		http://www.go-mono.com
 Source0:	https://github.com/mono/mono-addins/archive/%{name}-%{name}-%{version}.tar.gz
 #Source0:	http://ftp.novell.com/pub/mono/sources/%{name}/%{name}-%{version}.tar.bz2
+Patch0:		fix-delay-sign.patch
 BuildArch:	noarch
 BuildRequires:	pkgconfig(gtk-sharp-2.0)
 BuildRequires:	pkgconfig(mono)
@@ -62,6 +63,7 @@ Mono Addin Support - development files and tools
 %setup -q -n %{name}-%{name}-%{version}
 
 %build
+%autopatch -p1
 autoreconf -vif
 ./configure --prefix=%{_prefix}
 #gw parallel make broken in 0.4
