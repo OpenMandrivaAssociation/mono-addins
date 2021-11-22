@@ -1,7 +1,7 @@
 Summary:	Mono Addins
 Name:		mono-addins
 Version:	1.3.3
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Other
 Url:		http://www.go-mono.com
