@@ -4,7 +4,7 @@ Version:	1.3.3
 Release:	4
 License:	MIT
 Group:		Development/Other
-Url:		http://www.go-mono.com
+Url:		https://www.go-mono.com
 Source0:	https://github.com/mono/mono-addins/archive/%{name}-%{name}-%{version}.tar.gz
 #Source0:	http://ftp.novell.com/pub/mono/sources/%{name}/%{name}-%{version}.tar.bz2
 Patch0:		fix-delay-sign.patch
