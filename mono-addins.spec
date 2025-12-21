@@ -9,6 +9,11 @@ Source0:	https://github.com/mono/mono-addins/archive/%{name}-%{name}-%{version}.
 #Source0:	http://ftp.novell.com/pub/mono/sources/%{name}/%{name}-%{version}.tar.bz2
 Patch0:		fix-delay-sign.patch
 BuildArch:	noarch
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(gtk-sharp-2.0)
 BuildRequires:	pkgconfig(mono)
 
